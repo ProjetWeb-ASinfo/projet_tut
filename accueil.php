@@ -11,14 +11,14 @@
             <button class="btn btn-menu" id="cartes_util">Mes cartes</button>
         </div>
         <div class="col-sm-4 col-xs-12">
-            <button class="btn btn-menu" id="nouv_cartes">Nouvelles cartes</button>
+            <button class="btn btn-menu" id="recherche">Rechercher</button>
         </div>
         <div class="col-sm-4 col-xs-12">
             <button class="btn btn-danger" id="deconnexion">Déconnexion</button>
         </div>
         <script>
-            $("#cartes_util").click(function() {
-                charger("cartes_util.php");
+            $("#menu button").click(function() {
+                charger($(this).attr("id") + ".php");
             });
         </script>
     </div>
@@ -38,13 +38,13 @@
                     <img src="cards/card1.png" alt="carte 1">
                 </div>
                 <div class="item">
-                    <img src="cards/card1.png" alt="carte 2">
+                    <img src="cards/card3.png" alt="carte 2">
                 </div>
                 <div class="item">
-                    <img src="cards/card1.png" alt="carte 3">
+                    <img src="cards/card6.png" alt="carte 3">
                 </div>
                 <div class="item">
-                    <img src="cards/card1.png" alt="carte 4">
+                    <img src="cards/card9.png" alt="carte 4">
                 </div>
             </div>
 

@@ -1,14 +1,17 @@
 <?php include_once('session.php'); $_SESSION['page'] = "cartes_util.php" ?>
 
 <div class="title"><h1>Mes cartes:</h1></div>
-<script>
-    $(".title").click(function() {
-        charger("accueil.php");
-    });
-</script>
 <section class="container-fluid">
     <div class="col-xs-12 col-sm-12 col-md-12" id="header-table">
         <button id="nouvelle" class="bnt btn-menu">Nouvelle carte</button>
+        <script>
+            $(".title").click(function() {
+                charger("accueil.php");
+            });
+            $("#nouvelle").click(function() {
+                charger("nouvelle.php");
+            });
+        </script>
         <table class="table">
             <thead>
                 <tr>
@@ -43,6 +46,7 @@
     <div id="modal-preview" class="modal fade">
         <div class="modal-dialog">
             <img id="preview" src="" alt="">
+            <h2>0 propositions en attente</h2>
         </div>
     </div>
 </section>
