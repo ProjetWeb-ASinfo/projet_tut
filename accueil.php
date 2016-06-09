@@ -1,3 +1,5 @@
+<?php include_once('session.php'); $_SESSION['page'] = "accueil.php" ?>
+
 <section class="container-fluid" id="menu-container">
     <div class="col-xs-6 col-xs-offset-3">
         <button class="btn visible-xs" data-toggle="collapse" data-target="#menu" id="coll-menu">
@@ -14,6 +16,11 @@
         <div class="col-sm-4 col-xs-12">
             <button class="btn btn-danger" id="deconnexion">Déconnexion</button>
         </div>
+        <script>
+            $("#cartes_util").click(function() {
+                charger("cartes_util.php");
+            });
+        </script>
     </div>
 </section>
 <section class="container-fluid">

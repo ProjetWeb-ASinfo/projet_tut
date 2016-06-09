@@ -20,6 +20,9 @@ h1 {
     width: 100%;
     z-index: 3;
 }
+.title:active {
+    background-color: rgba(255, 170, 0, .9);
+}
 
 #bg {
     height: 100vh;
@@ -77,7 +80,7 @@ h1 {
 }
 
 #coll-menu {
-    font-size: 200%;
+    font-size: 2.7vh;
     color: #ffe6b3;
     width: 50%;
     margin-left: auto;
@@ -99,7 +102,7 @@ h1 {
 }
 
 .btn-menu {
-    font-size: 200%;
+    font-size: 2.6vh;
     width: 100%;
     min-width: 9em;
     color: #ffe6b3;
@@ -119,10 +122,10 @@ h1 {
 }
 
 .btn-danger {
-    font-size: 200%;
+    font-size: 2.6vh;
     color: #ffe6b3;
     width: 100%;
-    min-width: 8em;
+    min-width: 9em;
     border-radius: 50px;
     border: 3px solid #ebcccc;
 }
@@ -142,7 +145,7 @@ h1 {
 }
 
 #header-table {
-    margin-top: 11vh;
+    margin-top: 12vh;
     position: fixed;
     width: 93%;
 }
@@ -157,8 +160,8 @@ h1 {
 #header-table th:nth-child(3) { text-align: right; }
 
 #card-table {
-    margin-top: 21vh;
-    height: 75vh;
+    margin-top: 29vh;
+    height: 70vh;
     overflow: scroll;
 }
 
@@ -180,6 +183,11 @@ h1 {
 #preview {
     width: 84%;
     margin-left: 8%;
+}
+
+#nouvelle {
+    width: 100%;
+    font-size: 4vh;
 }
 
 

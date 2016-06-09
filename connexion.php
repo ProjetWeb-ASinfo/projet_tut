@@ -1,3 +1,5 @@
+<?php include_once('session.php'); $_SESSION['page'] = "connexion.php" ?>
+
 <section class="container-fluid">
     <div class="col-sm-12 col-xs-12 col-lg-12 connexionScreen">
         <div class="form-group">

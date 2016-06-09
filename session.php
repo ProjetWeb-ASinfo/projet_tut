@@ -8,4 +8,8 @@ if (!isset($_SESSION['users'])) {
                                'login' => '',
                                'password' => '');
 }
+if (!isset($_SESSION['page'])) {
+    $_SESSION['page'] = "connexion.php";
+}
+
 ?>
