@@ -46,7 +46,12 @@
     <div id="modal-preview" class="modal fade">
         <div class="modal-dialog">
             <img id="preview" src="" alt="">
-            <h2>0 propositions en attente</h2>
+            <h2><a href='#modal-preview' data-toggle='modal'>0 propositions en attente</a></h2>
+            <script>
+                $("#modal-preview a").click(function() {
+                    charger("echanges.php");
+                });
+            </script>
         </div>
     </div>
 </section>

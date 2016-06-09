@@ -19,6 +19,11 @@ h2 {
     text-align: center;
 }
 
+a {
+    text-decoration: none;
+    color: #ffe6b3;
+}
+
 .title {
     position: fixed;
     top: 0;
@@ -35,7 +40,7 @@ h2 {
     height: 100vh;
     background-color: rgba(204, 147, 18, .8);
     border: 10px solid #faffbd;
-    overflow: scroll;
+    overflow: auto;
 }
 
 #content {
@@ -128,7 +133,7 @@ h2 {
     background-color: #ff8000;
 }
 
-.btn-danger {
+#deconnexion {
     font-size: 2.6vh;
     color: #ffe6b3;
     width: 100%;
@@ -157,7 +162,7 @@ h2 {
     width: 93%;
 }
 
-#header-table th {
+.table>thead>tr>th {
     font: 350% cantarell;
     color: #ffe6b3;
     text-align: left;
@@ -179,7 +184,7 @@ h2 {
     margin-right: 0;
 }
 
-#card-table td {
+.table>tbody>tr>td {
     font: 3vh cantarell;
     color: #ffe6b3;
     border-top: 1px solid #ffe6b3;
@@ -198,12 +203,57 @@ h2 {
     font-size: 4vh;
 }
 
-#add-form {
+.default-frame {
     margin-top: 15vh;
     background-color: rgba(255, 170, 0, .6);
     text-align: center;
+    padding-top: 3vh;
     padding-bottom: 3vh;
     border: 1px solid #faffbd;
 }
 
+#carte_proposition, #carte_propre {
+    width: 100%;
+}
+#transfert {
+    margin-top: 100%;
+    font-size: 10vh;
+    color: #ffe6b3;
+}
 
+#swap-table th:first-child { text-align: left; }
+#swap-table th:last-child { text-align: right; }
+#swap-btn, #no_swap-btn {
+    text-align: center;
+    color: #ffe6b3;
+    font-size: 9vh;
+    border-radius: 100px;
+    width: 100%;
+    height: 100%;
+}
+
+#coul option { font-size: 2vh; }
+#recherche-form { margin-top: 10vh; }
+#recherche-form label {
+    margin-top: 2%;
+    font: 4vh cantarell;
+    color: #ffe6b3;
+    text-align: center;
+}
+#recherche-form .form-control {
+    font-size: 4vh;
+    background-color: #faffbd;
+    color: #cc8800;
+    border-radius: 20px;
+}
+#recherche-form>thead>tr>th { text-align: center; }
+#recherche-form th:first-child, #recherche-form th:last-child {
+    width: 33%;
+}
+
+#valider_rech {
+    border-radius: 17px;
+    font-size: 4vh;
+    padding-top: 0;
+    padding-bottom: 0;
+}
