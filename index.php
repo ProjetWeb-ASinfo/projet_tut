@@ -28,7 +28,7 @@
         </script>
         <div id="bg">
             <div id="content">
-                <?php //include $_SESSION['page']; ?>
+                <?php include $_SESSION['page']; ?>
             </div>
         </div>
     </body>

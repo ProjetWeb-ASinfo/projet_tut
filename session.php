@@ -6,7 +6,7 @@ if (!isset($_SESSION['users'])) {
                                'nom' => '',
                                'prenom' => '',
                                'login' => '',
-                               'password' => '');
+                               'email' => '');
 }
 if (!isset($_SESSION['page'])) {
     $_SESSION['page'] = "connexion.php";
